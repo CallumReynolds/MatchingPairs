@@ -1,0 +1,38 @@
+
+h1 {
+  font-size: 3rem;
+  margin:  3%;
+  color: white;
+}
+
+body {
+  font-family: 'Sarabun', sans-serif;
+  text-align: center;
+  background-color: grey;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.pairCard {
+  width: 125px;
+  height: 125px;
+  display: inline-block;
+  border: 5px solid black;
+  border-radius: 20%;
+  background-size: cover;
+  background-position: center;
+}
+
+.matched {
+  box-shadow: 0 0 20px white;
+  pointer-events: none;
+}
+
+#score {
+  color: white;
+  margin: 1%;
+}
