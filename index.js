@@ -72,6 +72,10 @@ $('.pairCard').click(function() {
             secondGuess.push(secondUserGuess);
             console.log("Second click: " + secondUserGuess);
             console.log("ID: " + secondIdGuess);
+            $(".pairCard").addClass("disable-click");
+            setTimeout(function () {
+              $(".pairCard").removeClass("disable-click");
+            }, 1000);
               // Checks cards
               if (firstGuess[0] == secondGuess[0]) {
                 console.log("success");

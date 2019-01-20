@@ -32,6 +32,10 @@ body {
   pointer-events: none;
 }
 
+.disable-click {
+  pointer-events: none;
+}
+
 #score {
   color: white;
   margin: 1%;
