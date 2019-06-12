@@ -40,3 +40,25 @@ body {
   color: white;
   margin: 1%;
 }
+
+.butn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #6034d9;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #ff00d9;
+  background-image: -webkit-linear-gradient(top, #ff00d9, #a234d9);
+  background-image: -moz-linear-gradient(top, #ff00d9, #a234d9);
+  background-image: -ms-linear-gradient(top, #ff00d9, #a234d9);
+  background-image: -o-linear-gradient(top, #ff00d9, #a234d9);
+  background-image: linear-gradient(to bottom, #ff00d9, #a234d9);
+  text-decoration: none;
+}

@@ -48,12 +48,14 @@ for ( x=1; x<=16; x++ ){
   revealCard(x);
 }
 
-var score = 0;
+var score = 8;
 var tries = 0;
 var firstGuess = [];
 var secondGuess = [];
 var clicks = 0;
 var globalFirstIdGuess = " ";
+
+$("#resetBtn").hide();
 
 $('.pairCard').click(function() {
     if (clicks == 0) {
@@ -63,6 +65,8 @@ $('.pairCard').click(function() {
             // Store 'firstIdGuess' in global variable so it can be identified in checking
             globalFirstIdGuess = firstIdGuess;
             firstGuess.push(firstUserGuess);
+            // Stops user from clicking on the same image
+            $("#" + firstIdGuess).addClass("disable-click");
             console.log("First click: " + firstUserGuess);
             console.log("ID: " + firstIdGuess);
     } else {
@@ -72,6 +76,7 @@ $('.pairCard').click(function() {
             secondGuess.push(secondUserGuess);
             console.log("Second click: " + secondUserGuess);
             console.log("ID: " + secondIdGuess);
+            // Stops spam clicking
             $(".pairCard").addClass("disable-click");
             setTimeout(function () {
               $(".pairCard").removeClass("disable-click");
@@ -117,9 +122,11 @@ function attempts() {
   }
   $("#score").text("You found " + score + " out of 8 pairs with " + tries + " " + tryOrTries + ".");
   if (score == 8) {
+    $("#resetBtn").show();
     $("#score").text("You found all the pairs with " + tries + " " + tryOrTries + "!");
   }
 }
+
 
 
 

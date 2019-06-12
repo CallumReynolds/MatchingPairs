@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>MatchingPairs</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
   </head>
   <body>
     <h1>Match the Pairs!</h1>
-    <p id="score">Find all the pairs! (Don't click too quickly between guesses.)</p>
+    <button id="resetBtn" class="butn" onClick="window.location.reload();">Reset!</button>
+    <p id="score">Find all the pairs!</p>
     <div class="container">
       <div class="row">
         <div id=div1 class="pairCard"></div>
@@ -35,6 +38,7 @@
         <div id=div16 class="pairCard"></div>
       </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js" charset="utf-8"></script>
   </body>
