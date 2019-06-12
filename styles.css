@@ -55,6 +55,7 @@ body {
 
 .butn:hover {
   background: #ff00d9;
+  background-image: -webkit-gradient(top, #ff00d9, #a234d9);
   background-image: -webkit-linear-gradient(top, #ff00d9, #a234d9);
   background-image: -moz-linear-gradient(top, #ff00d9, #a234d9);
   background-image: -ms-linear-gradient(top, #ff00d9, #a234d9);

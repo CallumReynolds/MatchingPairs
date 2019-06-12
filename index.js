@@ -48,7 +48,7 @@ for ( x=1; x<=16; x++ ){
   revealCard(x);
 }
 
-var score = 8;
+var score = 0;
 var tries = 0;
 var firstGuess = [];
 var secondGuess = [];
