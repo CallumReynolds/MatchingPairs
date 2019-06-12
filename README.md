@@ -7,4 +7,4 @@ How to play: It's simple, the 'game' will load and you will see all the images f
 
 Note: This version is not supported for viewing on mobile and tablet devices. (It will display on the devices but will be displayed incorrectly)
 
-Feel free to fork and mess around with the source code!
+Feel free to fork/download and mess around with the source code!
