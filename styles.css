@@ -63,3 +63,7 @@ body {
   background-image: linear-gradient(to bottom, #ff00d9, #a234d9);
   text-decoration: none;
 }
+
+.btn-visibility-hide {
+  visibility: hidden;
+}

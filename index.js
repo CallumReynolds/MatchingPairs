@@ -48,14 +48,14 @@ for ( x=1; x<=16; x++ ){
   revealCard(x);
 }
 
-var score = 0;
+var score = 8;
 var tries = 0;
 var firstGuess = [];
 var secondGuess = [];
 var clicks = 0;
 var globalFirstIdGuess = " ";
 
-$("#resetBtn").hide();
+$("#resetBtn").addClass("btn-visibility-hide");
 
 $('.pairCard').click(function() {
     if (clicks == 0) {
@@ -122,7 +122,7 @@ function attempts() {
   }
   $("#score").text("You found " + score + " out of 8 pairs with " + tries + " " + tryOrTries + ".");
   if (score == 8) {
-    $("#resetBtn").show();
+    $("#resetBtn").removeClass("btn-visibility-hide");
     $("#score").text("You found all the pairs with " + tries + " " + tryOrTries + "!");
   }
 }
